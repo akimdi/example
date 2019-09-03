@@ -1,1 +1,16 @@
-more samples on https://github.com/golang/example
+more samples on UPSTREAM https://github.com/golang/example
+
+Накатывание изменений с апстрима на мой форк на Github
+
+https://github.com/akimdi/example
+
+git clone --verbose git@github.com:akimdi/example.git
+git status
+git remote -v
+git remote add upstream git@github.com:golang/example.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git status
+git push origin master
+git status
